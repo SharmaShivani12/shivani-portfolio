@@ -1,6 +1,9 @@
 /* ========================= */
 /* BACKGROUND */
 /* ========================= */
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -15,17 +18,21 @@ body {
 /* ========================= */
 
 .about {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 18px;
 }
 
 .about-container {
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }
 
 /* TEXT */
@@ -48,7 +55,7 @@ body {
 /* LINKS BUTTONS */
 .links a {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 0;
     margin-top: 25px;
     padding: 10px 18px;
     background: #111;
@@ -62,6 +69,12 @@ body {
     background: #333;
 }
 
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
 /* ========================= */
 /* FLOATING IMAGE */
@@ -94,6 +107,7 @@ body {
 /* ========================= */
 
 .work-intro {
+    line-height: 1.4;
     text-align: center;
     padding: 10px 20px 60px;
 }
@@ -188,7 +202,7 @@ body {
 /* ========================= */
 
 .experience {
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-family: "Courier New", monospace;
     text-align: center;
 }
@@ -216,8 +230,8 @@ body {
 
 /* Header row with logo */
 .exp-header {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
     gap: 18px;
     margin-bottom: 15px;
 }
@@ -404,5 +418,61 @@ body {
 
     100% {
         transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    /* About section stack */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 220px;
+        margin-top: 30px;
+    }
+
+    .about-text h1 {
+        font-size: 34px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    /* Cards padding smaller */
+    .project-card,
+    .exp-card,
+    .rec-card,
+    .hobby-card {
+        margin: 20px 15px;
+        padding: 22px;
+    }
+
+    /* Painting images smaller */
+    .hobby-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Typewriter smaller */
+    .typewriter {
+        font-size: 24px;
+        white-space: normal;
+        border-right: none;
+    }
+
+    .typewriter-title {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 80px 15px;
     }
 }
