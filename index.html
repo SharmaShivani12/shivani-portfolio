@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shivani Sharma | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SVG brush clip paths -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                <path d="M0,0.6 C0.1,0.8 0.3,0.2 0.5,0.4 C0.7,0.6 0.9,0.2 1,0.4 L1,1 L0,1 Z" />
+            </clipPath>
+
+            <clipPath id="clip-indefinite" clipPathUnits="objectBoundingBox">
+                <path d="M0,0.7 C0.15,0.9 0.35,0.3 0.55,0.5 C0.75,0.7 0.9,0.3 1,0.5 L1,1 L0,1 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+    <!-- ABOUT SECTION -->
+    <section class="about">
+
+        <div class="about-container">
+
+            <div class="about-text">
+                <h1>
+                    Hi, I'm Shivani Sharma
+
+                </h1>
+                <h2><span class="dev-icon">💻</span>Full-Stack & AI Developer</h2>
+
+
+                <p>
+                    I design and build end-to-end applications — from scalable backend systems and APIs to intelligent
+                    AI agents and ML
+                    pipelines. Passionate about transforming complex workflows into reliable, production-ready solutions
+                    that deliver real
+                    business impact.
+                </p>
+
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/shivani-s-386872148" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/SharmaShivani12" target="_blank">GitHub</a>
+                    <a href="https://www.kaggle.com/shivanisharma1297">Kaggle</a>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="profile.jpg" alt="Shivani">
+            </div>
+
+        </div>
+
+    </section>
+    <div class="brush-divider"></div>
+
+
+    <section class="experience">
+
+        <h2 class="typewriter-title">Experience</h2>
+
+        <!-- Fraunhofer -->
+        <div class="exp-card">
+
+            <div class="exp-header">
+                <img src="fraunhofer.png" class="company-logo">
+                <div>
+                    <h3>Fraunhofer ISE — Research Assistant</h3>
+                    <span class="exp-date">Jun 2023 – Present</span>
+                </div>
+            </div>
+
+            <p class="exp-sub">Europe’s leading applied research institute for solar energy systems.</p>
+
+            <ul>
+                <li>Designed and fine-tuned deep learning models for computer vision.</li>
+                <li>Built automated ML pipelines on GPU/HPC clusters.</li>
+                <li>Developed FastAPI model services for production deployment.</li>
+                <li>Created AI document processing platform reducing manual work by 30%.</li>
+                <li>Implemented monitoring and experiment tracking workflows.</li>
+            </ul>
+        </div>
+
+
+        <!-- Accenture -->
+        <div class="exp-card">
+
+            <div class="exp-header">
+                <img src="accenture.jpeg" class="company-logo">
+                <div>
+                    <h3>Accenture — Software Engineer</h3>
+                    <span class="exp-date">Aug 2019 – Sept 2022</span>
+                </div>
+            </div>
+
+            <p class="exp-sub">Global professional services firm focused on cloud, data and AI.</p>
+
+            <ul>
+                <li>Automated enterprise workflows using Python, SQL and AWS.</li>
+                <li>Built SQL data pipelines and BI datasets.</li>
+                <li>Implemented CI/CD pipelines and deployment workflows.</li>
+                <li>Developed monitoring and log analysis pipelines.</li>
+                <li>Led identity management automation (LDAP synchronization).</li>
+            </ul>
+        </div>
+
+
+    </section>
+    <div class="brush-divider"></div>
+    <!-- TYPEWRITER INTRO -->
+    <section class="work-intro">
+        <h2 class="typewriter">
+            <span id="type-text"></span>
+        </h2>
+        <p>
+            Here are some projects where I built AI systems, automation pipelines
+            and production-ready applications.
+        </p>
+    </section>
+
+    <section class="projects">
+
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>🧪 AI-Powered SDS Parser Agent</h3>
+
+            <div class="project-details">
+                <a href="https://github.com/SharmaShivani12/AI-SDS-Parser" target="_blank"> 🔗 GitHub Repository</a>
+
+                <ul>
+                    <li>Production-grade LLM workflow for document processing</li>
+                    <li>Human-in-the-loop validation & schema enforcement</li>
+                    <li>REST APIs and backend orchestration</li>
+                </ul>
+
+                <div class="tools">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Docker</span>
+                    <span>PostgreSQL</span>
+                    <span>Local LLM</span>
+                    <span>Pydantic</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>📈 AI Crypto Trading Agent</h3>
+
+            <div class="project-details">
+                <a href="https://github.com/SharmaShivani12/Trading_with_RAGChatbot" target="_blank"> 🔗 GitHub
+                    Repository</a>
+
+                <ul>
+                    <li>Agentic trading system with RAG pipeline</li>
+                    <li>Multi-agent reasoning and tool-calling loops</li>
+                    <li>Real-time market data integration</li>
+                </ul>
+
+                <div class="tools">
+                    <span>LLMs</span>
+                    <span>CoinGecko API</span>
+                    <span>Streamlit</span>
+                    <span>Vector Retrieval </span>
+                    <span>RAG</span>
+                    <span>Multi-Agent Systems</span>
+                    <span>Streamlit</span>
+                    <span>MCP-style Tool Integration</span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>📊 Sales Forecasting & BI Dashboard</h3>
+
+            <div class="project-details">
+                <a href="https://github.com/SharmaShivani12/End Multi-Agent Systems · MCP-style Tool Integration · CoinGecko API · Streamlit · Vector Retrieval-to-End-Sales-Forecasting-Business-Intelligence-Dashboard"
+                    target="_blank"> 🔗 GitHub Repository</a>
+
+                <ul>
+                    <li>End-to-end analytics & ETL pipeline</li>
+                    <li>Time-series forecasting using Prophet</li>
+                    <li>Interactive Power BI dashboards</li>
+                </ul>
+
+                <div class="tools">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Prophet</span>
+                    <span>Power BI</span>
+
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>🧬 Benchmarking Genomic Foundation Models</h3>
+
+            <div class="project-details">
+                <a href="https://github.com/SharmaShivani12/Benchmarking-Genomic-Foundation-models-on-predicting-RNA-binding-protein-sites"
+                    target="_blank"> 🔗 GitHub
+                    Repository</a>
+
+                <ul>
+                    <li>Trained and evaluated deep learning and LLM models on GPU/HPC infrastructure.</li>
+                    <li>Built scalable pipelines to preprocess 30,000+ genomic sequences into model-ready datasets.
+                    </li>
+                    <li>Developed reproducible benchmarking to compare classical ML and pre-trained sequence models</li>
+                </ul>
+
+                <div class="tools">
+                    <span>LLMs</span>
+                    <span>CoinGecko API</span>
+                    <span>Streamlit</span>
+                    <span>Vector Retrieval </span>
+                    <span>RAG</span>
+                    <span>Multi-Agent Systems</span>
+                    <span>Streamlit</span>
+                    <span>MCP-style Tool Integration</span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3> 🏦 Bank Backend API</h3>
+
+            <div class="project-details">
+                <a href="https://github.com/SharmaShivani12/Backend-Banking-API" target="_blank"> 🔗 GitHub
+                    Repository</a>
+
+                <ul>
+                    <li>Designed and implemented a FastAPI-based backend simulating core banking operations (user
+                        onboarding, account
+                        management, balance checks, secure transfers).
+                    </li>
+                    <li>Implemented JWT-based authentication and role-based access control (RBAC).</li>
+                    <li>Built as a production-oriented prototype with clean architecture, automated testing,
+                        containerization, and CI/CD</li>
+                </ul>
+
+                <div class="tools">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>JWT</span>
+                    <span>Docker</span>
+                    <span>Pytest(Unit testing)</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="brush-divider"></div>
+    <section class="recommendations">
+
+        <h2 class="typewriter-title">Letters of Recommendation</h2>
+
+        <p class="rec-intro">
+            The following letters highlight my technical skills, research ability,
+            and professional work ethic through feedback from supervisors and collaborators.
+        </p>
+
+        <!-- Recommendation 1 -->
+        <div class="rec-card">
+            <h3>Marius Singler (Supervisior)</h3>
+            <span class="rec-role">Researcher at
+                Production Technology - Structuring and Metallization — Fraunhofer Institute for Solar Energy Systems
+                ISE</span>
+
+
+            <div class="rec-image">
+                <img src="rec1.png" alt="Recommendation Letter 1">
+            </div>
+        </div>
+
+        <!-- Recommendation 2 -->
+        <div class="rec-card">
+            <h3>Dr. Michael Uhl </h3>
+            <span class="rec-role">Bioinformatics Group (Department of Computer Science) at
+                Albert-Ludwigs-
+                Universität Freiburg.</span>
+
+
+
+            <div class="rec-image">
+                <img src="rec2.png" alt="Recommendation Letter 2">
+            </div>
+        </div>
+
+    </section>
+    <div class="brush-divider"></div>
+    <section class="hobbies">
+
+        <h2 class="typewriter-title">Beyond Tech</h2>
+
+        <div class="hobby-card">
+            <h3>🎨 Painting</h3>
+            <p>
+                Apart from building AI systems and software, I enjoy painting.
+                It helps me stay creative, patient and observant — qualities
+                that also influence how I approach problem solving and design.
+            </p>
+            <img src="painting.jpg" alt="">
+            <img src="painting1.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- TYPEWRITER SCRIPT -->
+    <script>
+        const text = "Want to check out my work?";
+        const speed = 60;
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("type-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+
+</body>
+<script>
+    function toggleProject(card) {
+        const details = card.querySelector(".project-details");
+
+        if (details.style.display === "block") {
+            details.style.display = "none";
+        } else {
+            details.style.display = "block";
+        }
+    }
+</script>
+
+</html>
